@@ -109,7 +109,7 @@ form_search.addEventListener("submit", (e) => {
 function search(data) {
   data.forEach((value) => {
     console.log(value.id);
-    if (value.name.include(form_search.input.value)) {
+    if (value.name === form_search.input.value){
       alert(value.name + `  ${value.id }-qatorda`);
     }else{
       alert("bunday narsa yoq!")
