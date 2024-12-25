@@ -74,7 +74,7 @@ function edit(id) {
   let editpro = prompt("edit your Todo");
   // name: form.input.value
 
-  console.log(
+  // console.log(
     fetch(`${api}/${id}`, {
       method: "PUT",
       body: JSON.stringify({ name: editpro, time: "edit " + getTime() }),
@@ -82,7 +82,7 @@ function edit(id) {
     })
       .then((data) => fetchfunc())
       .catch((error) => console.log(error))
-  );
+  // );
 }
 
 //TIME
@@ -110,7 +110,7 @@ function search(data) {
   data.forEach((value) => {
     console.log(value.id);
     if (value.name == form_search.input.value) {
-      alert(value.name + `  ${value.id - 1}-qatorda`);
+      alert(value.name + `  ${value.id }-qatorda`);
     }else{
       alert("bunday narsa yoq!")
     }
