@@ -111,6 +111,8 @@ function search(data) {
     console.log(value.id);
     if (value.name == form_search.input.value) {
       alert(value.name + `  ${value.id - 1}-qatorda`);
+    }else{
+      alert("bunday narsa yoq!")
     }
   });
 }
