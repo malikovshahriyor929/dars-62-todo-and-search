@@ -103,16 +103,14 @@ form_search.addEventListener("submit", (e) => {
       .then((data) => data.json())
       .then((data) => search(data))
       .catch((error) => console.log("error"))
-  
+ 
 });
 
 function search(data) {
   data.forEach((value) => {
-    console.log(value.id);
-    if (value.name === form_search.input.value){
+    // console.log(value.id);
+    if (value.name == form_search.input.value) {
       alert(value.name + `  ${value.id }-qatorda`);
-    }else{
-      alert("bunday narsa yoq!")
     }
   });
 }
